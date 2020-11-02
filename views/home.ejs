@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestPage</title>
+</head>
+<body>
+    <p>Home</p>
+    <form method="POST" action='/register'>
+        <input type="text" name="todoit">
+        <button>Update</button>
+    </form>
+    <% Todo.forEach(function(el){ %>
+        <table>
+            <td>
+                <li><%= el.todoList %></li>
+            </td>
+        </table>
+        <!-- <h1><%= el.created_at %></h1> -->
+    <% }) %> 
+
+    
+</body>
+</html>
